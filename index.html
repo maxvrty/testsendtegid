@@ -25,12 +25,12 @@
     
 
     // Отправляем ID на сервер
-    fetch('https://afd3-89-22-177-227.ngrok-free.app/receive_tg_id', {
-      method: 'POST',
+    fetch('https://7mt2qo-176-118-32-227.ru.tuna.am/get_last_game', {
+      method: 'GET',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ telegramId: tgId })
+      // body: JSON.stringify({ telegramId: tgId })
     })
     .then(response => response.json())
     .then(data => {
