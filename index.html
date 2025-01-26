@@ -20,7 +20,6 @@
     // Отображаем ID на сайте
     document.getElementById('tg-id').textContent = 'Ваш Telegram ID: ' + tgId;
     document.getElementById('username').textContent = 'Ваш Telegram Username: ' + username;
-     document.getElementById('photo_url').textContent = 'Ваш Telegram photo_url: ' +photo_url;
 
     // Отправляем ID на сервер
     fetch('https://afd3-89-22-177-227.ngrok-free.app/receive_tg_id', {
