@@ -27,6 +27,7 @@
     // Отправляем ID на сервер
     fetch('https://rpc2l1-176-118-32-227.ru.tuna.am/get_last_game', {
       method: 'GET',
+      mode: 'no-cors'
       headers: {
         'Content-Type': 'application/json',
       },
