@@ -7,14 +7,17 @@
 </head>
 <body>
 <div id="tg-id">Загрузка...</div>
+  <div id="username">Загрузка...</div>
 
 <script>
   // Проверяем, доступен ли объект initDataUnsafe
   if (window.Telegram.WebApp.initDataUnsafe) {
     // Получаем Telegram ID из initDataUnsafe
     var tgId = window.Telegram.WebApp.initDataUnsafe.user.id;
+    var username = window.Telegram.WebApp.initDataUnsafe.user.username;
     // Отображаем ID на сайте
     document.getElementById('tg-id').textContent = 'Ваш Telegram ID: ' + tgId;
+    document.getElementById('username').textContent = 'Ваш Telegram Username: ' + username;
 
     // Отправляем ID на сервер
     fetch('https://afd3-89-22-177-227.ngrok-free.app/receive_tg_id', {
